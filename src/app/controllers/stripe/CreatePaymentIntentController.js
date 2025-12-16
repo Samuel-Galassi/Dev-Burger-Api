@@ -1,7 +1,7 @@
 import Stripe from 'stripe'
 import * as yup from 'yup';
 import dotenv from 'dotenv';
-dotenv.config();
+dotenv.config(); 
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
