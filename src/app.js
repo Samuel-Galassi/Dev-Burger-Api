@@ -5,7 +5,7 @@ import cors from 'cors';
 
 const app = express();
 app.use(cors({
-    origin:'https://devburger-interface-two.vercel.app', //frontend
+    origin:process.env.URL_VERCEL, //frontend
     method:['GET','POST','PUT','DELETE'],
     credentials: true
 }));
