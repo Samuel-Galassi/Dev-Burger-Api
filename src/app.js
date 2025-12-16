@@ -6,7 +6,7 @@ import cors from 'cors';
 const app = express();
 app.use(cors({
     origin:process.env.URL_VERCEL, //frontend
-    method:['GET','POST','PUT','DELETE'],
+    methods:['GET','POST','PUT','DELETE'],
     credentials: true
 }));
 app.use(express.json());
