@@ -22,7 +22,8 @@ class Database {
     mongo() {
         this.mongooseConnection = mongoose.connect(
             process.env.MONGO_URL,
-        );
+        ).then(() => console.log('MongoDB conectado com sucesso!'))
+            .catch(err => console.error('Erro ao conectar no MongoDB:', err));
     }
 }
 export default new Database();
