@@ -31,7 +31,7 @@ class ProductController {
             name,
             price,
             category_id,
-            path: filename,
+            path: `product-file/${filename}`,
             offer
         });
 
@@ -58,7 +58,7 @@ class ProductController {
         let path
         if (req.file) {
             const { filename } = req.file;
-            path = filename
+            path = `product-file/${filename}`;
         }
         await Product.update({
             name,
