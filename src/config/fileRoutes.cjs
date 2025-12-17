@@ -1,6 +1,6 @@
 const { resolve } = require('node:path');
 const express = require('express');
-const corsStatic = require('../app/middlewares/corsStatic').default;
+const corsStatic = require('../app/middlewares/corsStatic');
 
 const uploadPath = resolve(__dirname, '..', '..', 'uploads');
 
