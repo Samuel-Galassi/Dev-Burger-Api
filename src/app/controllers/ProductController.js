@@ -35,6 +35,7 @@ class ProductController {
             offer
         });
 
+        
 
         return res.status(201).json(newProduct);
     }
